@@ -1,1 +1,3 @@
-//  testes para requisitos
+use("dataFlights");
+
+db.voos.find({ ano: { $lt: 2017 } }).count();
