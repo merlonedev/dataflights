@@ -1,1 +1,1 @@
-db.voos.find({ "empresa.nome": "GOL" }, { vooId: 1, _id: 0 }).skip(10).limit(2);
+db.voos.find({}, { vooId: 1, _id: 0 }).skip(9).limit(3);
