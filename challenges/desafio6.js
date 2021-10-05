@@ -5,5 +5,5 @@ db.voos.find(
     "empresa.nome": 1,
     passageiros: 1,
     _id: 0,
-  }
+  },
 );
