@@ -1,7 +1,6 @@
 use("dataFlights");
 db.voos.find({
-  litrosCombustivel: { $ne: { $lt: 1000 } },
-  litrosCombustivel: { $exists: true }
+  litrosCombustivel: { $ne: { $lt: 1000 }, $exists: true },
 }, {
   vooId: 1,
   _id: 0,
