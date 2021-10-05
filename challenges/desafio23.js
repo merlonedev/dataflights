@@ -1,4 +1,3 @@
-use("dataFlights");
 db.voos.find({
   litrosCombustivel: { $ne: { $lt: 1000 }, $exists: true },
 }, {

@@ -1,4 +1,3 @@
-use("dataFlights");
 db.voos.deleteMany(
   {
     "empresa.nome": "GOL",
