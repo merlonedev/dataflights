@@ -2,10 +2,7 @@ db.voos.find({
   $and: [
     { litrosCombustivel: { $exists: true } },
     { litrosCombustivel: { $lte: 600 } },
-    { $or: [
-      { "empresa.nome": { $ne: "GOL" } },
-      { "empresa.nome": { $ne: "AZUL" } },
-    ] },
+    { "empresa.nome": { $nin: ["Gol", "Azul"] } },
   ],
 }, 
 { 
