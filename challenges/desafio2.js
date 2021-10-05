@@ -1,3 +1,3 @@
 db.voos.find({
   "empresa.nome": "AZUL",
-}).count(10);
+}).limit(10);
